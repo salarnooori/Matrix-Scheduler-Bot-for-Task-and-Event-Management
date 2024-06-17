@@ -1,0 +1,17 @@
+sudo apt install python3-venv
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install matrix-nio[e2e]
+
+pip install opsdroid[all]
+
+pip install opsdroid[connector_matrix_e2e]
+
+pip install python-olm
+
+opsdroid start
+
+deactivate

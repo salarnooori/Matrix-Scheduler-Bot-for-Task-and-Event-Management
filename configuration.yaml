@@ -1,0 +1,18 @@
+connectors:
+  matrix:
+    # Required
+    mxid: '@schedulebot:matrix.org'
+    password: '09302397083s'
+    rooms:
+      'main': '#myschedulingtestroom:matrix.org'
+
+    nick: 'NLP_HW2_GROUP5'
+    device_id: 'OPSDroid'
+    device_name: 'opsdroid'
+    enable_encryption: True
+
+skills:
+  - name: scheduling
+    path: ./scheduling.py
+  - name: auto_join
+    path: ./auto_join.py
